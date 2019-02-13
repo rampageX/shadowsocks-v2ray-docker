@@ -31,7 +31,6 @@ CMD exec ss-server \
       -p $SERVER_PORT \
       -k $PASSWORD \
       -m $METHOD \
-      --fast-open \
       -u \
       --plugin $OBFS_PLUGIN \
       --plugin-opts $OBFS_OPTS \

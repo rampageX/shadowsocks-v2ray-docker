@@ -11,7 +11,7 @@ ENV SERVER_PORT 1080
 ENV PASSWORD    password
 ENV METHOD      chacha20-ietf-poly1305
 ENV OBFS_PLUGIN v2ray-plugin
-ENV OBFS_OPTS   server;tls;host=$HOST
+ENV OBFS_OPTS   server
 ENV ARGS=
 
 USER root
@@ -31,6 +31,7 @@ CMD exec ss-server \
       -p $SERVER_PORT \
       -k $PASSWORD \
       -m $METHOD \
+      --fast-open \
       -u \
       --plugin $OBFS_PLUGIN \
       --plugin-opts $OBFS_OPTS \

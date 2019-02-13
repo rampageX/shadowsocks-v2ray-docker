@@ -1,23 +1,31 @@
-# shadowsocks-obfs-docker
+# shadowsocks-v2ray-docker
 
-Shadowsocks-libev server with simple-obfs running in Docker.
+Shadowsocks-libev server with v2ray-plugin running in Docker.
 
-[![Docker Automated build](https://img.shields.io/docker/automated/boris1993/shadowsocks-obfs-docker.svg)](https://hub.docker.com/r/boris1993/shadowsocks-obfs-docker/)
-[![shadowsocks-obfs-docker metadata](https://images.microbadger.com/badges/image/boris1993/shadowsocks-obfs-docker:v3.2.3-0.0.5.svg)](https://microbadger.com/images/boris1993/shadowsocks-obfs-docker:v3.2.3-0.0.5)
-[![shadowsocks-obfs-docker tag](https://images.microbadger.com/badges/version/boris1993/shadowsocks-obfs-docker:v3.2.3-0.0.5.svg)](https://microbadger.com/images/boris1993/shadowsocks-obfs-docker:v3.2.3-0.0.5)
+[![Docker Automated build](https://img.shields.io/docker/automated/boris1993/shadowsocks-v2ray-docker.svg)](https://hub.docker.com/r/boris1993/shadowsocks-v2ray-docker/)
+[![shadowsocks-v2ray-docker metadata](https://images.microbadger.com/badges/image/boris1993/shadowsocks-v2ray-docker:v3.2.3-1.0.svg)](https://microbadger.com/images/boris1993/shadowsocks-v2ray-docker:v3.2.3-1.0)
+[![shadowsocks-v2ray-docker tag](https://images.microbadger.com/badges/version/boris1993/shadowsocks-v2ray-docker:v3.2.3-1.0.svg)](https://microbadger.com/images/boris1993/shadowsocks-v2ray-docker:v3.2.3-1.0)
 
 ---
 
 ## Current version
 
 + [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev): 3.2.3
-+ [simple-obfs](https://github.com/shadowsocks/simple-obfs): 0.0.5
++ [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin): 1.0
 
 ## Usage
 
+### Pull the image
+
 I recommend use a specified tag instead of the "latest" tag. [This article explained why](https://medium.com/@mccode/the-misunderstood-docker-tag-latest-af3babfd6375).
 
-+ Start the container
+```bash
+docker pull boris1993/shadowsocks-v2ray-docker:v3.2.3-1.0
+```
+
+### Start the container
+
++ Shell script
 
 ```bash
 docker run \
